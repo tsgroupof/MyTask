@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Task Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Daily Task Calendar</h1>
+
+    <div class="card">
+      <h2>Add Task</h2>
+      <div class="task-form">
+        <input type="text" id="taskName" placeholder="Enter task name" />
+        <input type="time" id="taskTime" />
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Today’s Tasks</h2>
+      <ul id="taskList"></ul>
+      <button id="checkAllBtn">Mark All Complete</button>
+      <button id="clearBtn">Clear Today</button>
+    </div>
+
+    <div class="card">
+      <h2>Calendar</h2>
+      <div id="calendar" class="calendar"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
